@@ -1,4 +1,10 @@
-# create-t3-turbo
+# create-t3-turbo-prisma
+
+A fork of [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo/), commit [ab2151](https://github.com/t3-oss/create-t3-turbo/commit/d523ae47f8110b30a46d08d8d42ec811f6ab2151).
+
+**Changes:**
+
+- Replace Drizzle with Prisma
 
 > **Note**
 > Due to high demand, this repo now uses the `app` directory with some new experimental features. If you want to use the more traditional `pages` router, [check out the repo before the update](https://github.com/t3-oss/create-t3-turbo/tree/414aff131ca124573e721f3779df3edb64989fd4).
