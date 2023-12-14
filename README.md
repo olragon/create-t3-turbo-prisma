@@ -6,6 +6,8 @@ A fork of [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo/), commit 
 
 - Replace Drizzle with Prisma
 
+---
+
 > **Note**
 > Due to high demand, this repo now uses the `app` directory with some new experimental features. If you want to use the more traditional `pages` router, [check out the repo before the update](https://github.com/t3-oss/create-t3-turbo/tree/414aff131ca124573e721f3779df3edb64989fd4).
 
@@ -21,7 +23,7 @@ There are two ways of initializing an app using the `create-t3-turbo` starter. Y
 or use Turbo's CLI to init your project (use PNPM as package manager):
 
 ```bash
-npx create-turbo@latest -e https://github.com/t3-oss/create-t3-turbo
+npx create-turbo@latest -e https://github.com/olragon/create-t3-turbo-prisma
 ```
 
 ## About
@@ -246,6 +248,6 @@ Deploying your Expo application works slightly differently compared to Next.js o
 
 ## References
 
-The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-app).
+The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-app) and [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
-A [blog post](https://jumr.dev/blog/t3-turbo) where I wrote how to migrate a T3 app into this.
+A [blog post](https://jumr.dev/blog/t3-turbo) where Julius Marminge wrote how to migrate a T3 app into this.
