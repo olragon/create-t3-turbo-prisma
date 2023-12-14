@@ -12,7 +12,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@acme/db": "workspace:^0.1.0",
     "@acme/prisma": "workspace:^0.1.0",
     "@auth/core": "^0.18.4",
     "@auth/drizzle-adapter": "^0.3.9",
