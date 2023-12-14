@@ -3,10 +3,10 @@
 
 import Discord from "@auth/core/providers/discord";
 import type { DefaultSession } from "@auth/core/types";
-import { DrizzleAdapter } from "@auth/drizzle-adapter";
+import { PrismaAdapter } from "@auth/prisma-adapter";
 import NextAuth from "next-auth";
 
-import { db, tableCreator } from "@acme/db";
+import { prisma } from "@acme/prisma";
 
 export type { Session } from "next-auth";
 
@@ -24,7 +24,7 @@ export const {
   signIn,
   signOut,
 } = NextAuth({
-  adapter: DrizzleAdapter(db, tableCreator),
+  adapter: PrismaAdapter(prisma),
   providers: [Discord],
   callbacks: {
     session: ({ session, user }) => ({

@@ -14,10 +14,11 @@ export const env = createEnv({
    * built with invalid env vars.
    */
   server: {
-    DB_USERNAME: z.string(),
-    DB_PASSWORD: z.string(),
-    DB_HOST: z.string(),
-    DB_NAME: z.string(),
+    DB_USERNAME: z.string().optional(),
+    DB_PASSWORD: z.string().optional(),
+    DB_HOST: z.string().optional(),
+    DB_NAME: z.string().optional(),
+    DATABASE_URL: z.string(),
   },
   /**
    * Specify your client-side environment variables schema here.
@@ -36,6 +37,7 @@ export const env = createEnv({
     DB_PASSWORD: process.env.DB_PASSWORD,
     DB_HOST: process.env.DB_HOST,
     DB_NAME: process.env.DB_NAME,
+    DATABASE_URL: process.env.DATABASE_URL,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   skipValidation:

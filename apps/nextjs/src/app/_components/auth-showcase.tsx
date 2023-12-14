@@ -3,7 +3,7 @@ import { auth, signIn, signOut } from "@acme/auth";
 export async function AuthShowcase() {
   const session = await auth();
 
-  if (!session) {
+  if (!session || !session.user) {
     return (
       <form
         action={async () => {
